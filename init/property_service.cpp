@@ -1427,17 +1427,23 @@ static void SetSafetyNetProps() {
     InitPropertySet("ro.build.type", "user");
     InitPropertySet("ro.system.build.type", "user");
     InitPropertySet("ro.system_ext.build.type", "user");
+    InitPropertySet("ro.system_dlkm.build.type", "user");
     InitPropertySet("ro.vendor.build.type", "user");
     InitPropertySet("ro.vendor_dlkm.build.type", "user");
     InitPropertySet("ro.product.build.type", "user");
     InitPropertySet("ro.odm.build.type", "user");
+    InitPropertySet("ro.odm_dlkm.build.type", "user");
+    InitPropertySet("ro.oem.build.type", "user");
     InitPropertySet("ro.build.keys", "release-keys");
     InitPropertySet("ro.build.tags", "release-keys");
     InitPropertySet("ro.bootimage.build.tags", "release-keys");
     InitPropertySet("ro.odm.build.tags", "release-keys");
+    InitPropertySet("ro.odm_dlkm.build.tags", "release-keys");
+    InitPropertySet("ro.oem_dlkm.build.tags", "release-keys");
     InitPropertySet("ro.product.build.tags", "release-keys");
     InitPropertySet("ro.system.build.tags", "release-keys");
     InitPropertySet("ro.system_ext.build.tags", "release-keys");
+    InitPropertySet("ro.system_dlkm.build.tags", "release-keys");
     InitPropertySet("ro.vendor.build.tags", "release-keys");
     InitPropertySet("ro.vendor_dlkm.build.tags", "release-keys");
     InitPropertySet("ro.vendor.boot.warranty_bit", "0");
@@ -1445,6 +1451,7 @@ static void SetSafetyNetProps() {
     InitPropertySet("vendor.boot.vbmeta.device_state", "locked");
     InitPropertySet("vendor.boot.verifiedbootstate", "green");
     InitPropertySet("oplusboot.verifiedbootstate", "green");
+    InitPropertySet("ro.is_ever_orange", "0");
 }
 
 void PropertyInit() {
